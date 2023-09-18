@@ -15,52 +15,85 @@ public class TorreDeControl {
 	
 	// ATRIBUTOS //
 
+//	private int nroTorre;
+	
 	private String nombreAeropuerto;
 	
-	private List<Pista> pistas;
+	//Lista de cotizaciones realizadas por Torre De Control//
+	private List<Pista> aterrizajePistas;
 	
+	//Lista de Voladores//
 	private List<Volador> listaVoladores;
 	
 	
+	//  CONSTRUCTORES //
 	
-	// CONSTRUCTOR POR DEFECTO //
-	
-	
-	// Se declara la lista de pistas //
-	
+	//Se declara La lista de pista//
 	public TorreDeControl() {
-		pistas = new ArrayList<>();
-		
+		aterrizajePistas = new ArrayList<>();
 	}
 	
 	/*******************************
 	 * CONSTRUCTOR PARAMETRIZADO
-	 * @param nombreAreopuerto
+	 *
 	 * @param pistas
 	 * @param listaVoladores
 	 * 
 	 *****************************/
-	public TorreDeControl(String nombreAeropuerto) {
+	public TorreDeControl( String nombreAeropuerto) {
+//		this.nroTorre = nroTorre;
 		this.nombreAeropuerto = nombreAeropuerto;
-		this.pistas = new ArrayList<>();
+		this.aterrizajePistas = new ArrayList<>();
 	}
 	
 	// METODOS //
 	
-	// registra los voladores que aterrizaron en las pistas //
+	// registra aterrizajes en pistas //
 	
 	public void registrarAterrizajes(Pista pista) {
-		this.pistas.add(pista);
+		this.aterrizajePistas.add(pista);
 	}
 	
 	// Se visualiza por pantalla el registro de aterrizajes en pistas //
 	
 	public void mostrarAterrizajes() {
-		for(Pista p: pistas)
+		for(Pista p: aterrizajePistas)
 		{
 			System.out.println(p);
 		}
 	}
+
+	
+	
+	// GETTER Y SETTER //
+	
 	
 
+	public List<Pista> getAterrizajePistas() {
+		return aterrizajePistas;
+	}
+	
+	
+
+//	public int getNroTorre() {
+//		return nroTorre;
+//	}
+
+	public String getNombreAeropuerto() {
+		return nombreAeropuerto;
+	}
+
+	public List<Volador> getListaVoladores() {
+		return listaVoladores;
+	}
+
+	@Override
+	public String toString() {
+		return "TorreDeControl ["
+				+ "nombreAeropuerto = " + nombreAeropuerto 
+				+ ", aterrizajePistas = " + aterrizajePistas
+				+ ", listaVoladores = " + listaVoladores + 
+				"]";
+	}
+	
 }

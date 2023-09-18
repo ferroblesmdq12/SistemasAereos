@@ -37,11 +37,11 @@ public class GestorVolador {
 	 * @return un volador.
 	 **************************************************************/
 	
-	public static Volador getVolador(String tipoVolador) {
+	public static Volador getVolador(int idVuelo) {
 		Volador volador = null;
 		for(Volador v: voladores)
 		{
-			if(v.getTipoVolador() == tipoVolador)
+			if(v.getIdVuelo() == idVuelo)
 			{
 				volador = v;
 			}

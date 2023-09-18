@@ -1,10 +1,8 @@
 package Model;
-import java.util.Date;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.temporal.ChronoUnit;
-import java.util.Scanner;
+
 
 /**************************************** 
  *                                      *
@@ -18,7 +16,7 @@ public class Pista {
 	
 	// ATRIBUTOS //
 	
-	private String nombrePista;
+	//private String nombrePista;
 	
 	private LocalDateTime fechaManiobra;
 	
@@ -30,13 +28,13 @@ public class Pista {
 	
 	/*******************************************
 	 * CONSTRUCTOR PARAMETRIZADO
-	 * @param nombrePista
+	 * 
 	 * @param fechaManiobra
 	 * @param volador
 	 ********************************************/
 	
-	public Pista(String nombrePista, LocalDateTime fechaManiobra, Volador volador) {
-		this.nombrePista = nombrePista;
+	public Pista( LocalDateTime fechaManiobra, Volador volador) {
+		//this.nombrePista = nombrePista;
 		this.fechaManiobra = fechaManiobra;
 		this.volador = volador;
 	}
@@ -45,7 +43,23 @@ public class Pista {
 
 	@Override
 	public String toString() {
-		return "Pista [nombrePista=" + nombrePista + ", fechaManiobra=" + fechaManiobra + ", volador=" + volador + "]";
+		return "Pista [ fechaManiobra=" + fechaManiobra + ", volador=" + volador + "]";
+	}
+
+
+
+
+
+
+
+	public LocalDateTime getFechaManiobra() {
+		return fechaManiobra;
+	}
+
+
+
+	public Volador getVolador() {
+		return volador;
 	}
 	
 	

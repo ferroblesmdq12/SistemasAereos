@@ -14,7 +14,7 @@ public class Volador {
 	private int idVuelo;
 	private String nombreVolador;
 	private String matricula;
-	private String tipoVolador; // Avion Comercial - Avion de Pasajeros - Avion Privado - Avion de Carga - Avion Oficial - Avion Sanitario //
+	private String tipoVolador; // 1- Avion Comercial;  2- Avion Privado; 3- Avion de Carga; 4- Avion Oficial; 5- Avion Sanitario //
 	
 	//CONSTRUCTOR PARAMETRIZADO //
 	
