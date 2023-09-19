@@ -42,7 +42,14 @@ public class GestorPistas  {
 		for(Pista p: pistas)
 		{
 			System.out.println(p);
+			//return this.pistas;
 		}
+		
+	
+		//return this.pistas
 	}
+	
 }
+	
+	
 

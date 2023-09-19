@@ -28,6 +28,13 @@ public class TorreDeControl {
 	
 	//  CONSTRUCTORES //
 	
+	// Inicializar una lista de elementos voladores
+   
+	public TorreDeControl() {
+		listaVoladores = new ArrayList<>();
+	}
+	
+	
 	//Se declara La lista de pista//
 	public TorreDeControl() {
 		aterrizajePistas = new ArrayList<>();
@@ -41,7 +48,6 @@ public class TorreDeControl {
 	 * 
 	 *****************************/
 	public TorreDeControl( String nombreAeropuerto) {
-//		this.nroTorre = nroTorre;
 		this.nombreAeropuerto = nombreAeropuerto;
 		this.aterrizajePistas = new ArrayList<>();
 	}
@@ -74,11 +80,6 @@ public class TorreDeControl {
 	}
 	
 	
-
-//	public int getNroTorre() {
-//		return nroTorre;
-//	}
-
 	public String getNombreAeropuerto() {
 		return nombreAeropuerto;
 	}

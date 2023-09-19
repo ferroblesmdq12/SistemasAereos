@@ -58,6 +58,14 @@ public class main {
 		GestorVolador.agregarVolador(volador02);
 		GestorVolador.agregarVolador(volador03);
 		GestorVolador.agregarVolador(volador04);
+		
+		// CARGAMOS PISTAS //
+		
+//		Pista pista01 = new Pista(01);
+//		Pista pista02 = new Pista(02);
+		
+//		GestorPistas.agregarPista(pista01);
+//		GestorPistas.agregarPista(pista02);
 				
 	}
 	

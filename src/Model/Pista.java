@@ -3,6 +3,10 @@ package Model;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+import java.util.ArrayList;
+import java.util.List;
+
+
 
 /**************************************** 
  *                                      *
@@ -16,7 +20,7 @@ public class Pista {
 	
 	// ATRIBUTOS //
 	
-	//private String nombrePista;
+	private int nroPista;
 	
 	private LocalDateTime fechaManiobra;
 	
@@ -28,13 +32,13 @@ public class Pista {
 	
 	/*******************************************
 	 * CONSTRUCTOR PARAMETRIZADO
-	 * 
+	 * @param nroPista
 	 * @param fechaManiobra
 	 * @param volador
 	 ********************************************/
 	
-	public Pista( LocalDateTime fechaManiobra, Volador volador) {
-		//this.nombrePista = nombrePista;
+	public Pista(int nroPista, LocalDateTime fechaManiobra, Volador volador) {
+		this.nroPista = nroPista;
 		this.fechaManiobra = fechaManiobra;
 		this.volador = volador;
 	}
@@ -43,12 +47,18 @@ public class Pista {
 
 	@Override
 	public String toString() {
-		return "Pista [ fechaManiobra=" + fechaManiobra + ", volador=" + volador + "]";
+		return "Pista [ nroPista = " + nroPista + "fechaManiobra=" + fechaManiobra + ", volador=" + volador + "]";
 	}
 
 
 
+	
 
+
+
+	public int getNroPista() {
+		return nroPista;
+	}
 
 
 
